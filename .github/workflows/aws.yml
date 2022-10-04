@@ -68,6 +68,7 @@ jobs:
         registry-type: public
 
     - name: Build, tag, and push docker image to Amazon ECR Public
+      id: build-image
       env:
         REGISTRY: ${{ steps.login-ecr-public.outputs.registry }}
         REGISTRY_ALIAS: x2w9y0s4
