@@ -74,10 +74,9 @@ jobs:
         # Build a docker container and
         # push it to ECR so that it can
         # be deployed to ECS.
-        docker login --username AWS --password ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.us-east-1.amazonaws.com
-        docker build -t public.ecr.aws/x2w9y0s4/fp-sim4-team-404:$IMAGE_TAG .
-        docker push public.ecr.aws/x2w9y0s4/fp-sim4-team-404:$IMAGE_TAG
-        echo "::set-output name=image::public.ecr.aws/x2w9y0s4/fp-sim4-team-404:$IMAGE_TAG"
+        docker build -t public.ecr.aws/x2w9y0s4/fp-sim4-team-404:latest .
+        docker push public.ecr.aws/x2w9y0s4/fp-sim4-team-404:latest
+        echo "::set-output name=image::public.ecr.aws/x2w9y0s4/fp-sim4-team-404:latest"
 
     - name: Fill in the new image ID in the Amazon ECS task definition
       id: task-def
