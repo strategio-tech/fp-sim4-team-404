@@ -1,0 +1,10 @@
+.git/
+.github/
+node_modules
+terraform/
+
+npm-debug.log
+.cache
+*.md
+!README*.md
+README-secret.md
