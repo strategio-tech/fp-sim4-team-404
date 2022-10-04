@@ -7,3 +7,5 @@ https://docs.google.com/document/d/12ve871wYzzY7bPiGktWz_FFFPXAOvJ2jQBCUS0qPt6A/
 
 <h3>Toolchain</h3>
 https://docs.google.com/document/d/173VKiQJNX3lcnYz6RxnbJpe36SKXekEk-vPCh3m6EFA/edit?usp=sharing
+
+![Architecture Diagram](https://drive.google.com/drive/folders/1J0ITdV9sr99YJ--X9wBGaVMUN12XV4UC "Architecture Diagram")
