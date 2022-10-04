@@ -1,0 +1,4 @@
+node_modules/
+terraform/
+npm-debug.log
+key.txt

@@ -1,0 +1,23 @@
+{
+  "name": "fp-sim4-team-404",
+  "version": "1.0.0",
+  "description": "fp-sim4-team-404 created by GitHub Classroom",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strategio-tech/fp-sim4-team-404.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/strategio-tech/fp-sim4-team-404/issues"
+  },
+  "homepage": "https://github.com/strategio-tech/fp-sim4-team-404#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
