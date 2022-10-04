@@ -9,4 +9,5 @@ https://docs.google.com/document/d/12ve871wYzzY7bPiGktWz_FFFPXAOvJ2jQBCUS0qPt6A/
 https://docs.google.com/document/d/173VKiQJNX3lcnYz6RxnbJpe36SKXekEk-vPCh3m6EFA/edit?usp=sharing
 
 <h3>Architecture Diagram</h3>
+
 ![Architecture Diagram](Diagrams/Cryptek-Architecture-Diagram.png "Architecture Diagram")
