@@ -3,6 +3,7 @@
 .github/
 node_modules
 terraform/
+Diagrams/
 
 npm-debug.log
 .cache
