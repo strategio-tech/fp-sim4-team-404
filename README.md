@@ -60,7 +60,7 @@ For the workflow to run smoothly, the user must do the following steps within an
 1) Create an ECR repository to store your images.
 2) Create an ECS task definition, an ECS cluster, and an ECS service.
 3) Store your ECS task definition as a JSON file in your GitHub repository.
-4) Store an IAM user access key in GitHub Actions secrets named `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
+4) Store an IAM user access key in GitHub Actions secrets named AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY.
 ```
 
 The workflow file must then be modified with the proper variables to function properly. For more information, view the [aws.yml](.github/workflows/aws.yml) file.
