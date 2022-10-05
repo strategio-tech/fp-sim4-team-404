@@ -12,7 +12,7 @@ https://docs.google.com/document/d/173VKiQJNX3lcnYz6RxnbJpe36SKXekEk-vPCh3m6EFA/
 
 ![Architecture Diagram](Diagrams/Cryptek-Architecture-Diagram.png "Architecture Diagram")
 
-## Local Deployment
+## Local Installation
 
 To run this project locally, clone this repository, go into the cloned repository's directory, and then run:
 
@@ -33,7 +33,7 @@ For the CI/CD pipeline and web deployment, a Github Action workflow is triggered
 - `package-lock.json`
 - `Dockerfile`
 
-For the workflow run smoothly, the user must do the following steps within an AWS account.
+For the workflow to run smoothly, the user must do the following steps within an AWS account.
 ```
 1) Create an ECR repository to store your images.
 2) Create an ECS task definition, an ECS cluster, and an ECS service.
@@ -41,7 +41,9 @@ For the workflow run smoothly, the user must do the following steps within an AW
 4) Store an IAM user access key in GitHub Actions secrets named `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
 ```
 
-Once this setup is complete and the workflow is activated, the following steps occur automatically:
+The workflow file must then be modified with the proper variables to function properly. For more information, view the [aws.yml](.github/workflows/aws.yml) file.
+
+Once the workflow is activated, the following steps occur automatically:
 ```
 1) The workflow gains programmatic access to AWS services using AWS IAM credentials.
 2) The workflow builds a Docker image for the app, then pushes this image to a public repository on AWS Elastic Container Registry (ECR).
