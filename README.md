@@ -12,7 +12,7 @@ https://docs.google.com/document/d/173VKiQJNX3lcnYz6RxnbJpe36SKXekEk-vPCh3m6EFA/
 
 ![Architecture Diagram](Diagrams/Cryptek-Architecture-Diagram.png "Architecture Diagram")
 
-## Deployment
+## Local Deployment
 
 To run this project locally, clone this repository, go into the cloned repository's directory, and then run:
 
@@ -20,6 +20,10 @@ To run this project locally, clone this repository, go into the cloned repositor
   npm install --force
   npm start
 ```
+
+You can then navigate to `localhost:3000` to view the web app.
+
+## Web Deployment
 
 For the CI/CD pipeline and web deployment, a Github Action workflow is triggered whenever the following files or directories are modified:
 
@@ -29,7 +33,15 @@ For the CI/CD pipeline and web deployment, a Github Action workflow is triggered
 - `package-lock.json`
 - `Dockerfile`
 
-The workflow operates with the following steps:
+For the workflow run smoothly, the user must do the following steps within an AWS account.
+```
+1) Create an ECR repository to store your images.
+2) Create an ECS task definition, an ECS cluster, and an ECS service.
+3) Store your ECS task definition as a JSON file in your GitHub repository.
+4) Store an IAM user access key in GitHub Actions secrets named `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
+```
+
+Once this setup is complete and the workflow is activated, the following steps occur automatically:
 ```
 1) The workflow gains programmatic access to AWS services using AWS IAM credentials.
 2) The workflow builds a Docker image for the app, then pushes this image to a public repository on AWS Elastic Container Registry (ECR).
@@ -38,4 +50,4 @@ The workflow operates with the following steps:
 ```
 This causes ECS to run the created task, which in turn deploys an EC2 instance that hosts the app.
 
-The app can be accessed at http://ec2-3-81-115-80.compute-1.amazonaws.com/.
+As an example, this app can be accessed at http://ec2-3-81-115-80.compute-1.amazonaws.com/.
