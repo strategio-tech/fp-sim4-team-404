@@ -1,25 +1,44 @@
-<h1>Cryptek - Cryptocurrency monitoring made easy </h1> 
+# Cryptek - Cryptocurrency monitoring made easy
 
 <p>Cryptek is a web-app designed to facilitate an easily-navigable cryptocurrency monitoring hub. Users can view lists of cryptocurrency assets and associated details without too much visual clutter or overcomplication. Creating a suitable environment for cryptocurrency novices or those who want simple information without needless detail.</p>
 
-<h3>App-Story</h3>
-https://docs.google.com/document/d/12ve871wYzzY7bPiGktWz_FFFPXAOvJ2jQBCUS0qPt6A/edit?usp=sharing
+![Front Page](Diagrams/Cryptek-front-page.png "Front Page")
 
-<h3>Toolchain</h3>
-https://docs.google.com/document/d/173VKiQJNX3lcnYz6RxnbJpe36SKXekEk-vPCh3m6EFA/edit?usp=sharing
+## Features
 
-<h3>Architecture Diagram</h3>
+- Allow user(s) to access a list of cryptocurrency assets (in order by price) — (based off the API)
+- Allow user(s) to index the list of cryptocurrencies
+- Allow user(s) to view details on a selected cryptocurrency
+- Allow user(s) to view graphs / charts on a selected cryptocurrency
+- Allow user(s) to favorite cryptocurrency assets to a ‘Watchlist’ through local storage
+- Allow user(s) to unfavorite cryptocurrency assets
+- Allow user(s) to access a web + mobile responsive app
+
+## Architecture Diagram
 
 ![Architecture Diagram](Diagrams/Cryptek-Architecture-Diagram.png "Architecture Diagram")
 
 ## Local Installation
 
-To run this project locally, clone this repository, go into the cloned repository's directory, and then run:
+To run this project locally, [npm and Node.js](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#using-a-node-installer-to-install-node-js-and-npm) must be installed. 
 
-```bash
+First, clone this repository, then go inside the directory:
+```
+  git clone https://github.com/strategio-tech/fp-sim4-team-404.git
+  cd fp-sim4-team-404
+```
+
+Install the dependencies required:
+```
   npm install --force
+```
+
+Finally, start the app:
+```
   npm start
 ```
+
+
 
 You can then navigate to `localhost:3000` to view the web app.
 
@@ -53,3 +72,7 @@ Once the workflow is activated, the following steps occur automatically:
 This causes ECS to run the created task, which in turn deploys an EC2 instance that hosts the app.
 
 As an example, this app can be accessed at http://ec2-3-81-115-80.compute-1.amazonaws.com/.
+
+## References
+App Story: https://docs.google.com/document/d/12ve871wYzzY7bPiGktWz_FFFPXAOvJ2jQBCUS0qPt6A/edit?usp=sharing
+Toolchain: https://docs.google.com/document/d/173VKiQJNX3lcnYz6RxnbJpe36SKXekEk-vPCh3m6EFA/edit?usp=sharing
