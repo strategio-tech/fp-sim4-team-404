@@ -29,7 +29,13 @@ name: Deploy to Amazon ECS
 on:
   push:
     branches:
-      - staging
+      - main
+    paths:
+      - 'public/**'
+      - 'src/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'Dockerfile'
 
 env:
   AWS_REGION: "us-east-1"                     # set this to your preferred AWS region, e.g. us-west-1
