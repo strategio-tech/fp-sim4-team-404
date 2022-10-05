@@ -1,6 +1,6 @@
 # Cryptek - Cryptocurrency monitoring made easy
 
-<p>Cryptek is a web-app designed to facilitate an easily-navigable cryptocurrency monitoring hub. Users can view lists of cryptocurrency assets and associated details without too much visual clutter or overcomplication. Creating a suitable environment for cryptocurrency novices or those who want simple information without needless detail.</p>
+<p>Cryptek is a web-app designed to facilitate an easily-navigable cryptocurrency monitoring hub. Users can view lists of cryptocurrency assets and associated details without too much visual clutter or overcomplication. Creating a suitable environment for cryptocurrency novices or those who want simple information without needless detail. The site can be accessed at http://ec2-3-81-115-80.compute-1.amazonaws.com/</p>
 
 ![Front Page](Diagrams/Cryptek-front-page.png "Front Page")
 
@@ -70,8 +70,6 @@ Once the workflow is activated, the following steps occur automatically:
 4) The ECS task definition is deployed to an existing ECS cluster and service
 ```
 This causes ECS to run the created task, which in turn deploys an EC2 instance that hosts the app.
-
-As an example, this app can be accessed at http://ec2-3-81-115-80.compute-1.amazonaws.com/.
 
 ## References
 App Story: https://docs.google.com/document/d/12ve871wYzzY7bPiGktWz_FFFPXAOvJ2jQBCUS0qPt6A/edit?usp=sharing
