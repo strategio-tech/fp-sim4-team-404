@@ -20,7 +20,10 @@
 
 ## Local Installation
 
-To run this project locally, [npm and Node.js](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#using-a-node-installer-to-install-node-js-and-npm) must be installed. 
+To run this project locally, the following must be installed:
+
+- [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#using-a-node-installer-to-install-node-js-and-npm) 8.5.1 or later
+- [Node.js](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#using-a-node-installer-to-install-node-js-and-npm) 16.14.0 or later
 
 First, clone this repository, then go inside the directory:
 ```
