@@ -14,7 +14,7 @@ https://docs.google.com/document/d/173VKiQJNX3lcnYz6RxnbJpe36SKXekEk-vPCh3m6EFA/
 
 ## Deployment
 
-To run this project locally, clone this project, go into the directory, and then run:
+To run this project locally, clone this repository, go into the cloned repository's directory, and then run:
 
 ```bash
   npm install --force
