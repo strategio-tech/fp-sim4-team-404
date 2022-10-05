@@ -68,9 +68,10 @@ The workflow file must then be modified with the proper variables to function pr
 Once the workflow is activated, the following steps occur automatically:
 ```
 1) The workflow gains programmatic access to AWS services using AWS IAM credentials.
-2) The workflow builds a Docker image for the app, then pushes this image to a public repository on AWS Elastic Container Registry (ECR).
-3) The ID for the image in the ECR repository is added to an AWS Elastic Container Service (ECS) task definition.
-4) The ECS task definition is deployed to an existing ECS cluster and service
+2) The workflow builds a Docker image for the app.
+3) This image is then pushed to a public repository on AWS Elastic Container Registry (ECR).
+4) The ID for the image in the ECR repository is added to an AWS Elastic Container Service (ECS) task definition.
+5) The ECS task definition is deployed to an existing ECS cluster and service
 ```
 This causes ECS to run the created task, which in turn deploys an EC2 instance that hosts the app.
 
