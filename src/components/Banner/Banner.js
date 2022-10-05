@@ -4,7 +4,7 @@ import Carousel from "./Carousel";
 const useStyles = makeStyles((theme) => ({
   banner: {
     //backgroundImage: "url(./banner.jpg)",
-    backgroundColor:"#D21BE3"  // Hot Pink #D21BE3 
+    backgroundColor:"#ACB6E5"  // Hot Pink #D21BE3 
                                // Original #ACB6E5
   },
   bannerContent: {
