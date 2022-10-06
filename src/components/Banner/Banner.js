@@ -4,7 +4,7 @@ import Carousel from "./Carousel";
 const useStyles = makeStyles((theme) => ({
   banner: {
     //backgroundImage: "url(./banner.jpg)",
-    backgroundColor:"#ACB6E5"
+    backgroundColor:"#2F355C"
   },
   bannerContent: {
     height: 400,
@@ -52,7 +52,6 @@ function Banner() {
               fontFamily: "Montserrat",
             }}
           >
-            Description
           </Typography>
         </div>
         <Carousel />
