@@ -16,7 +16,7 @@
 
 ## Architecture Diagram
 
-![Architecture Diagram](Diagrams/Cryptek-Architecture-Diagram.png "Architecture Diagram")
+![Architecture Diagram](Diagrams/Architecture-Diagram-FINAL.png "Architecture Diagram")
 
 ## Local Installation
 
