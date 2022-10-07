@@ -82,17 +82,11 @@
 ## Features
 
 - Allow user(s) to access a list of cryptocurrency assets (in order by price) — (based off the API)
-
 - Allow user(s) to index the list of cryptocurrencies
-
 - Allow user(s) to view details on a selected cryptocurrency
-
 - Allow user(s) to view graphs / charts on a selected cryptocurrency
-
 - Allow user(s) to favorite cryptocurrency assets to a ‘Watchlist’ through local storage
-
 - Allow user(s) to unfavorite cryptocurrency assets
-
 - Allow user(s) to access a web + mobile responsive app
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -101,7 +95,7 @@
 
 ## Architecture Diagram
 
-![Architecture Diagram](Diagrams/Cryptek-Architecture-Diagram.png "Architecture Diagram")
+![Architecture Diagram](Diagrams/Architecture-Diagram-FINAL.png "Architecture Diagram")
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,33 +106,25 @@
 To run this project locally, the following must be installed:
 
 - [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#using-a-node-installer-to-install-node-js-and-npm) 8.5.1 or later
-
 - [Node.js](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#using-a-node-installer-to-install-node-js-and-npm) 16.14.0 or later
 
 First, clone this repository, then go inside the directory:
 
 ```
-
 git clone https://github.com/strategio-tech/fp-sim4-team-404.git
-
 cd fp-sim4-team-404
-
 ```
 
 Install the dependencies required:
 
 ```
-
 npm install --force
-
 ```
 
 Finally, start the app:
 
 ```
-
 npm start
-
 ```
 
 You can then navigate to `localhost:3000` to view the web app.
@@ -151,19 +137,14 @@ You can then navigate to `localhost:3000` to view the web app.
 For the CI/CD pipeline and web deployment, a Github Action workflow is triggered whenever the following files or directories are modified:
 
 - `public/`
-
 - `src/`
-
 - `package.json`
-
 - `package-lock.json`
-
 - `Dockerfile`
 
 For the workflow to run smoothly, the user must do the following steps within an AWS account.
 
 ```
-
 1) Create an ECR repository to store your images.
 
 2) Create an ECS task definition, an ECS cluster, and an ECS service.
@@ -171,7 +152,6 @@ For the workflow to run smoothly, the user must do the following steps within an
 3) Store your ECS task definition as a JSON file in your GitHub repository.
 
 4) Store an IAM user access key in GitHub Actions secrets named AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY.
-
 ```
 
 The workflow file must then be modified with the proper variables to function properly. For more information, view the [aws.yml](.github/workflows/aws.yml) file.
@@ -179,7 +159,6 @@ The workflow file must then be modified with the proper variables to function pr
 Once the workflow is activated, the following steps occur automatically:
 
 ```
-
 1) The workflow gains programmatic access to AWS services using AWS IAM credentials.
 
 2) The workflow builds a Docker image for the app.
@@ -189,7 +168,6 @@ Once the workflow is activated, the following steps occur automatically:
 4) The ID for the image in the ECR repository is added to an AWS Elastic Container Service (ECS) task definition.
 
 5) The ECS task definition is deployed to an existing ECS cluster and service
-
 ```
 
 This causes ECS to run the created task, which in turn deploys an EC2 instance that hosts the app.
@@ -229,5 +207,3 @@ As an example, the site can be accessed at http://ec2-3-81-115-80.compute-1.amaz
 [javascript-url]: https://www.javascript.com/
 [node.js]: https://img.shields.io/static/v1?style=for-the-badge&message=Node.js&color=339933&logo=Node.js&logoColor=FFFFFF
 [node.js-url]: https://nodejs.org/en/
-
-`
