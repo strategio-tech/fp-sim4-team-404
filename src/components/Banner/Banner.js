@@ -3,8 +3,7 @@ import Carousel from "./Carousel";
 
 const useStyles = makeStyles((theme) => ({
   banner: {
-    //backgroundImage: "url(./banner.jpg)",
-    backgroundColor:"#2F355C"
+    background: 'linear-gradient(0deg, rgba(19,17,17,1) 0%, rgba(63,48,138,1) 35%, rgba(142,139,216,1) 100%)',
   },
   bannerContent: {
     height: 400,
@@ -39,17 +38,17 @@ function Banner() {
             style={{
               fontWeight: "bold",
               marginBottom: 15,
-              fontFamily: "Montserrat",
+              fontFamily: "Titillium Web",
             }}
           >
-            Cryptek
+            CRYPTEK
           </Typography>
           <Typography
             variant="subtitle2"
             style={{
               color: "darkgrey",
               textTransform: "capitalize",
-              fontFamily: "Montserrat",
+              fontFamily: "Titillium Web",
             }}
           >
           </Typography>

@@ -40,7 +40,7 @@ const CoinPage = () => {
 
       setAlert({
         open: true,
-        message: `${coin.name} Added to the Watchlist !`,
+        message: `${coin.name} added to the Watchlist!`,
         type: "success",
       });
     } catch (error) {
@@ -63,7 +63,7 @@ const CoinPage = () => {
 
       setAlert({
         open: true,
-        message: `${coin.name} Removed from the Watchlist !`,
+        message: `${coin.name} removed from the Watchlist!`,
         type: "success",
       });
     } catch (error) {
@@ -102,11 +102,11 @@ const CoinPage = () => {
     heading: {
       fontWeight: "bold",
       marginBottom: 20,
-      fontFamily: "Montserrat",
+      fontFamily: "Titillium Web",
     },
     description: {
       width: "100%",
-      fontFamily: "Montserrat",
+      fontFamily: "Titillium Web",
       padding: 25,
       paddingBottom: 15,
       paddingTop: 0,
@@ -130,7 +130,7 @@ const CoinPage = () => {
 
   const classes = useStyles();
 
-  if (!coin) return <LinearProgress style={{ backgroundColor: "#ACB6E5" }} />;
+  if (!coin) return <LinearProgress style={{ backgroundColor: "#8e8bd8" }} />;
 
   return (
     <div className={classes.container}>
@@ -156,7 +156,7 @@ const CoinPage = () => {
             <Typography
               variant="h5"
               style={{
-                fontFamily: "Montserrat",
+                fontFamily: "Titillium Web",
               }}
             >
               {numberWithCommas(coin?.market_cap_rank)}
@@ -170,7 +170,7 @@ const CoinPage = () => {
             <Typography
               variant="h5"
               style={{
-                fontFamily: "Montserrat",
+                fontFamily: "Titillium Web",
               }}
             >
               {symbol}{" "}
@@ -187,7 +187,7 @@ const CoinPage = () => {
             <Typography
               variant="h5"
               style={{
-                fontFamily: "Montserrat",
+                fontFamily: "Titillium Web",
               }}
             >
               {symbol}{" "}
@@ -204,8 +204,10 @@ const CoinPage = () => {
               variant="outlined"
               style={{
                 width: "100%",
-                height: 40,
-                backgroundColor: inWatchlist ? "#ff0000" :  "#ACB6E5",
+                borderRadius: 5,
+                padding: 10,
+                height: 50,
+                backgroundColor: inWatchlist ? "#ff0000" :  "#8e8bd8",
               }}
               onClick={inWatchlist ? removeFromWatchlist : addToWatchlist}
             >

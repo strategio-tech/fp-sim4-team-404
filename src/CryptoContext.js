@@ -56,16 +56,16 @@ const CryptoContext = ({ children }) => {
   useEffect(() => {
     // eslint-disable-next-line default-case
     switch (currency) {
-    case "USD":
-      setSymbol("$");
-      break;
-    case "EUR":
-      setSymbol("€");
-      break;
-    case "JPY" :
-      setSymbol("¥");
-      break;
-  } 
+      case "USD": case "CAD": case "AUD":
+        setSymbol("$");
+        break;
+      case "EUR":
+        setSymbol("€");
+        break;
+      case "JPY":
+        setSymbol("¥");
+        break;
+    }
 
     fetchCoins();
     // eslint-disable-next-line react-hooks/exhaustive-deps
