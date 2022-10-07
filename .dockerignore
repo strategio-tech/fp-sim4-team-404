@@ -1,0 +1,12 @@
+.aws/
+.git/
+.github/
+node_modules
+terraform/
+Diagrams/
+
+npm-debug.log
+.cache
+*.md
+!README*.md
+README-secret.md
