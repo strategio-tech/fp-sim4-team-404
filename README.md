@@ -3,7 +3,10 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-<img src="Diagrams/Cryptek-logo-favicon.png" style="width:250px">
+
+<a href="https://github.com/strategio-tech/fp-sim4-team-404">
+<img src="Diagrams/Cryptek-logo-favicon.png" alt="Cryptek Logo" style="width:300px">
+</a>
 
 <h3 align="center">Cryptek</h3>
 
@@ -35,6 +38,7 @@
     </li>
     <li><a href="#local-installation">Local Installation</a></li>
     <li><a href="#web-deployment">Web Deployment</a></li> 
+    	<li><a href="#demo">Demo</a></li>
 	<li><a href="#acknowledgments">Acknowledgments</a></li>
 	<li><a href="#authors">Authors</a></li>
   </ol>
@@ -42,9 +46,10 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
+<div align="center">
+<a href="https://youtu.be/quidVtpB9sk"><img src="Diagrams/Cryptek-front-page.png" alt="Click for YouTube Demo!" style="width: 800px"></a>
 
-![Front Page](Diagrams/Cryptek-front-page.png "Front Page")
-
+</div>
 <p>Cryptek is a web application designed to facilitate an easily-navigable cryptocurrency monitoring hub. Users can view lists of cryptocurrency assets and associated details without too much visual clutter or overcomplication. Creating a suitable environment for cryptocurrency novices or those who want simple information without needless detail.</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -175,7 +180,14 @@ Once the workflow is activated, the following steps occur automatically:
 
 This causes ECS to run the created task, which in turn deploys an EC2 instance that hosts the app.
 
-As an example, the site can be accessed at http://ec2-3-81-115-80.compute-1.amazonaws.com/.
+As an example, the site can be accessed at http://ec2-3-81-115-80.compute-1.amazonaws.com/
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- DEMO -->
+## Demo
+
+<a href="https://youtu.be/quidVtpB9sk"><img src="https://user-images.githubusercontent.com/70280559/194649116-323b1456-e0ef-422b-b7c9-c02ac6df0b67.png"></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
