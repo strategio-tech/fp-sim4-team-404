@@ -59,11 +59,13 @@
   - AWS IAM (Identity Access Management)
   - Amazon ECR (Elastic Container Registry)
   - Amazon ECS (Elastic Container Services)
+  - Amazon EC2 (Elastic Compute Cloud)
   - AWS Cloud Watch
 - [Firebase](https://firebase.google.com/)
   - Firebase Authentication
   - Firebase Firestore
 - [Visual Studio Code](https://code.visualstudio.com/)
+- [GitHub Actions](https://github.com/features/actions)
 
 ### Technologies
 
