@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-<img src="Diagrams/Cryptek-logo-favicon.png">
+<img src="Diagrams/Cryptek-logo-favicon.png" style="width:250px">
 
 <h3 align="center">Cryptek</h3>
 
