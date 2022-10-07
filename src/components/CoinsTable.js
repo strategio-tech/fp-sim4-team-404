@@ -36,11 +36,11 @@ export default function CoinsTable() {
       "&:hover": {
         backgroundColor: "#131111",
       },
-      fontFamily: "Montserrat",
+      fontFamily: "Squada One",
     },
     pagination: {
       "& .MuiPaginationItem-root": {
-        color: "#ACB6E5",
+        color: "#8e8bd8",
       },
     },
   });
@@ -70,7 +70,7 @@ export default function CoinsTable() {
       <Container style={{ textAlign: "center" }}>
         <Typography
           variant="h4"
-          style={{ margin: 18, fontFamily: "Montserrat" }}
+          style={{ margin: 18, fontFamily: "Titillium Web" }}
         >
           Cryptocurrency Prices by Market Cap
         </Typography>
@@ -82,17 +82,18 @@ export default function CoinsTable() {
         />
         <TableContainer component={Paper}>
           {loading ? (
-            <LinearProgress style={{ backgroundColor: "#ACB6E5" }} />
+            <LinearProgress style={{ backgroundColor: "#8e8bd8" }} />
           ) : (
             <Table aria-label="simple table">
-              <TableHead style={{ backgroundColor: "#ACB6E5" }}>
+              <TableHead style={{ backgroundColor: "#8e8bd8" }}>
                 <TableRow>
                   {["Coin", "Price", "24h Change", "Market Cap"].map((head) => (
                     <TableCell
                       style={{
                         color: "black",
+                        fontSize: '22px',
                         fontWeight: "700",
-                        fontFamily: "Montserrat",
+                        fontFamily: "Titillium Web",
                       }}
                       key={head}
                       align={head === "Coin" ? "left" : "right"}
@@ -134,7 +135,7 @@ export default function CoinsTable() {
                             <span
                               style={{
                                 textTransform: "uppercase",
-                                fontSize: 22,
+                                fontSize: 25,
                               }}
                             >
                               {row.symbol}

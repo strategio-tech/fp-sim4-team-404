@@ -29,14 +29,14 @@ const useStyles = makeStyles({
   logout: {
     height: "8%",
     width: "100%",
-    backgroundColor: "#ACB6E5",
+    backgroundColor: "#8e8bd8",
     marginTop: 20,
   },
   picture: {
     width: 200,
     height: 200,
     cursor: "pointer",
-    backgroundColor: "#ACB6E5",
+    backgroundColor: "#8e8bd8",
     objectFit: "contain",
   },
   watchlist: {
@@ -60,7 +60,7 @@ const useStyles = makeStyles({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    backgroundColor: "#ACB6E5",
+    backgroundColor: "#8e8bd8",
     boxShadow: "0 0 3px black",
   },
 });
@@ -107,7 +107,7 @@ export default function UserSidebar() {
 
       setAlert({
         open: true,
-        message: `${coin.name} Removed from the Watchlist!`,
+        message: `${coin.name} removed from the watchlist!`,
         type: "success",
       });
     } catch (error) {
@@ -126,11 +126,11 @@ export default function UserSidebar() {
           <Avatar
             onClick={toggleDrawer(anchor, true)}
             style={{
-              height: 38,
-              width: 38,
+              height:50,
+              width: 50,
               marginLeft: 15,
               cursor: "pointer",
-              backgroundColor: "#ACB6E5",
+              backgroundColor: "#8e8bd8",
             }}
             src={user.photoURL}
             alt={user.displayName || user.email}

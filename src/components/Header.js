@@ -19,8 +19,8 @@ import UserSidebar from "./Authentication/UserSidebar";
 const useStyles = makeStyles((theme) => ({
   title: {
     flex: 1,
-    color: "#ACB6E5",
-    fontFamily: "Montserrat",
+    color: "#8e8bd8",
+    fontFamily: "Squada One",
     fontWeight: "bold",
     cursor: "pointer",
   },
@@ -48,10 +48,10 @@ function Header() {
           <Toolbar>
             <Typography
               onClick={() => history.push(`/`)}
-              variant="h6"
+              variant="h4"
               className={classes.title}
             >
-              Cryptek
+              CRYPTEK
             </Typography>
             <Select
               variant="outlined"
